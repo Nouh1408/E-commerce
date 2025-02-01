@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaShoppingCart } from "react-icons/fa";
-import iconcolor from '../Navbar/Navbar.module.css';
+import navbarStyle from '../Navbar/Navbar.module.css';
 
 
 
@@ -11,8 +11,8 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container">
   <a className="navbar-brand" href="#">
-  <FaShoppingCart className={iconcolor['icon-color']} /> 
-  <span className={iconcolor['text-large']}>fresh cart</span> 
+  <FaShoppingCart className={navbarStyle['icon-color']} /> 
+  <span className={navbarStyle['logo']}>fresh cart</span> 
 </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
