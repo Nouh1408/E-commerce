@@ -1,3 +1,9 @@
-.icon-color{
-    color: green;
-}
+.icon-color {
+    color: #4FA74F; 
+    font-size: 32px;
+  }
+  
+  .text-large {
+    font-size: 28px; 
+    font-weight: 700;
+  }
