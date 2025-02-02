@@ -1,17 +1,20 @@
-import { useState } from 'react'
+
 
 import './App.css'
-import Navbar from './Components/Navbar/Navbar'
-import Footer from './Components/Footer/Footer'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import Register from './Components/Register/Register.jsx'
+import Login from './Components/Login/Login.jsx'
+
 
 function App() {
 
-
+  const router = createBrowserRouter([
+    {path:"register", element:<Register />},
+    {path:"login", element:<Login/>},
+  ])
   return (
-    <>
-     <Navbar/>
-     <Footer/>
-    </>
+     <RouterProvider router={router} />
+    
   )
 }
 
