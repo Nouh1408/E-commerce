@@ -1,9 +1,4 @@
-.icon-color {
-    color: #4FA74F; 
-    font-size: 32px;
-  }
-  
-  .logo {
-    font-size: 28px; 
-    font-weight: 700;
-  }
+.bgNav{
+  background-color: #F8F9FA;
+  width: 100%;
+}
