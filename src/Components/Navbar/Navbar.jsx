@@ -1,35 +1,12 @@
 import React from 'react'
-import { FaShoppingCart } from "react-icons/fa";
-import navbarStyle from '../Navbar/Navbar.module.css';
 
 
 
 export default function Navbar() {
   return (
-    
-  <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-  <div className="container">
-  <a className="navbar-brand" href="#">
-  <FaShoppingCart className={navbarStyle['icon-color']} /> 
-  <span className={navbarStyle['logo']}>fresh cart</span> 
-</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon" />
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link" href="#">register</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">login</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  </div>
-
-  )
+    <h1 className="text-3xl font-bold underline text-red-800">
+    Hello world!
+  </h1>
+  );
 }
+
