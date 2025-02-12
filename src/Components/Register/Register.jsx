@@ -37,13 +37,21 @@ export default function Register() {
           className="border border-gray-300 p-2 rounded-md w-full"
   
         />
-        <label htmlFor="renter">re-enter password :</label>
+        <label htmlFor="re" className="text-lg font-medium">re-enter password :</label>
         <input type="password"
-        name='ree'
+        name='re'
+        id='re'
+          className="border border-gray-300 p-2 rounded-md w-full"
+        />
+        <label htmlFor="phone" className="text-lg font-medium">Phone :</label>
+        <input type="tel"
+        name='phone'
+        id='phone'
+          className="border border-gray-300 p-2 rounded-md w-full"
         />
         
   
-        <div className=' flex'>
+        <div className=' flex flex-row-reverse'>
   
         <button
           type="submit"
