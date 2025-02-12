@@ -58,7 +58,7 @@ export default function Login() {
         <div className=' flex justify-between'>
         <Link
           className="font-medium text-md hover:text-green-700 transition-all duration-500"
-          to=""
+          to="/verify"
         >
           forget your password ?
         </Link>
