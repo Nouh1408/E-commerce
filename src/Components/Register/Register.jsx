@@ -1,3 +1,4 @@
+import { useState } from "react"
 import React from 'react'
 
 
@@ -22,6 +23,30 @@ export default function Register() {
   } else{
     setPassAlert(false)
   }
+}
+  const handle2 =(e) =>{
+    if(!e.target.value){
+      setEmailAlert(true)
+  } else{
+    setEmailAlert(false)
+  }
+}
+
+const handle3 =(e) =>{
+  if(!e.target.value){
+    setPhoneAlert(true)
+    } else{
+      setPhoneAlert(false)
+      }
+}
+
+const handle4 =(e) =>{
+  if(!e.target.value){
+    setPassAlertCheck(true)
+    } else{
+      setPassAlertCheck(false)
+      }
+      }
 
   return (
     <div className='container mx-auto px-4 mt-12'>
@@ -50,7 +75,11 @@ export default function Register() {
           id="emailF"
           name="emailF"
           className="border border-gray-300 p-2 rounded-md w-full"
+          onBlur={handle2}
         />
+        {
+          EmailAlert && (<div className="p-4 mb-4 text-sm text-red-600 rounded-lg bg-red-200" role="alert">email is required</div>)
+        }
   
   
         <label htmlFor="passF" className="text-lg font-medium">
@@ -64,7 +93,7 @@ export default function Register() {
           onBlur={handle1}
         />
         {
-          NameAlert && (<div className="p-4 mb-4 text-sm text-red-600 rounded-lg bg-red-200" role="alert">password is required</div>)
+          PassAlert && (<div className="p-4 mb-4 text-sm text-red-600 rounded-lg bg-red-200" role="alert">password is required</div>)
         }
 
         <label htmlFor="re" className="text-lg font-medium">re-enter password :</label>
@@ -72,13 +101,23 @@ export default function Register() {
         name='re'
         id='re'
           className="border border-gray-300 p-2 rounded-md w-full"
+          onBlur={handle4}
         />
+
+{
+          PassAlertCheck && (<div className="p-4 mb-4 text-sm text-red-600 rounded-lg bg-red-200" role="alert">re password is required</div>)
+          }
+
         <label htmlFor="phone" className="text-lg font-medium">Phone :</label>
         <input type="tel"
         name='phone'
         id='phone'
           className="border border-gray-300 p-2 rounded-md w-full"
+          onBlur={handle3}
         />
+        {
+          PhoneAlert && (<div className="p-4 mb-4 text-sm text-red-600 rounded-lg bg-red-200" role="alert">phoneNumber is required</div>)
+          }
         
   
         <div className=' flex flex-row-reverse'>
@@ -94,4 +133,4 @@ export default function Register() {
   </div>
     </div>
   )
-}
+  }
