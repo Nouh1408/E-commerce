@@ -11,9 +11,10 @@ function App() {
       path: "",
       element: <Layout />,
       children: [
-        { path: "login", element: <Login /> },
-        { path: "register", element: <Register /> },
-        { path: "verify", element: <Verify /> }, // Moved out of Login
+        { index: true, element: <Login /> },
+        { path: "sign-in", element: <Login /> },
+        { path: "sign-up", element: <Register /> },
+        { path: "verify", element: <Verify /> }, 
       ],
     },
   ]);
